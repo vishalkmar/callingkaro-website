@@ -3,4 +3,4 @@ dist
 dist-ssr
 .env.local
 .DS_Store
-# public/downloads/CallKaro.apk IS committed on purpose: Vercel serves it to the Download APK button.
+# public/downloads/CallingKaro.apk IS committed on purpose: Vercel serves it to the Download APK button.

@@ -46,9 +46,9 @@ export const DownloadButton = ({ size = 'lg', label = 'Download APK', className 
   <a
     className={`btn btn-primary btn-${size} ${className}`}
     href={SITE.apkUrl}
-    download="CallKaro.apk"
+    download="CallingKaro.apk"
     type="application/vnd.android.package-archive"
-    aria-label={`${label} - CallKaro for Android, version ${SITE.apkVersion}, ${SITE.apkSize}`}
+    aria-label={`${label} - CallingKaro for Android, version ${SITE.apkVersion}, ${SITE.apkSize}`}
   >
     <span className="btn-icon">
       <Icon name="download" size={size === 'sm' ? 16 : 20} stroke={2.4} />

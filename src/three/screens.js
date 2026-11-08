@@ -1,4 +1,4 @@
-// The phone's screen for each story chapter (our own CallKaro UI drawn on a 2D canvas).
+// The phone's screen for each story chapter (our own CallingKaro UI drawn on a 2D canvas).
 // Each draw function returns a key that changes only when the picture changes (texture re-upload).
 import { SCREEN_W, SCREEN_H, C, rr, statusBar, phoneGlyph, drawInCall, drawScreen } from './screenArt';
 
@@ -276,7 +276,7 @@ const drawInstall = (ctx, t) => {
   ctx.textAlign = 'center';
   ctx.fillStyle = C.ink;
   ctx.font = `800 44px ${FONT}`;
-  ctx.fillText('CallKaro', cx, 460);
+  ctx.fillText('CallingKaro', cx, 460);
   ctx.fillStyle = C.sub;
   ctx.font = `600 22px ${FONT}`;
   ctx.fillText('v1.0.0  ·  65 MB', cx, 500);

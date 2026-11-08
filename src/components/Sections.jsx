@@ -202,7 +202,7 @@ export const FinalCta = () => (
           अब इंटरनेट से कॉल करो
         </p>
         <h2 id="cta-title">Ab internet se calling karo.</h2>
-        <p>Download CallKaro, claim your welcome credits and make your first call today.</p>
+        <p>Download CallingKaro, claim your welcome credits and make your first call today.</p>
         <DownloadButton />
       </Reveal>
     </div>
@@ -215,7 +215,7 @@ export const Footer = () => (
       <div className="footer-row">
         <a className="brand" href="#top">
           <img className="brand-mark" src="/favicon.svg" alt="" width="34" height="34" />
-          CallKaro
+          CallingKaro
         </a>
         <nav className="footer-links" aria-label="Footer">
           {NAV.map(n => (
@@ -229,12 +229,12 @@ export const Footer = () => (
           <a href={SITE.termsUrl} rel="noopener">
             Terms of Use
           </a>
-          <a href={`mailto:${SITE.supportEmail}`}>Support</a>
+          {SITE.supportEmail ? <a href={`mailto:${SITE.supportEmail}`}>Support</a> : null}
         </nav>
       </div>
       <p className="footer-keywords">
-        CallKaro is an internet calling app for India: {KEYWORDS.join(' · ')}. Not for emergency calls - dial 112 from your
-        phone dialer. Credits have no cash value. © {new Date().getFullYear()} CallKaro.
+        CallingKaro is an internet calling app for India: {KEYWORDS.join(' · ')}. Not for emergency calls - dial 112 from your
+        phone dialer. Credits have no cash value. © {new Date().getFullYear()} CallingKaro.
       </p>
     </div>
   </footer>

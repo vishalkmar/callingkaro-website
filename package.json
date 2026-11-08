@@ -1,9 +1,9 @@
 {
-  "name": "callkaro-website",
+  "name": "callingkaro-website",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "CallKaro landing page - internet calls to any Indian number. Download the Android APK.",
+  "description": "CallingKaro landing page - internet calls to any Indian number. Download the Android APK.",
   "scripts": {
     "copy-apk": "node scripts/copy-apk.mjs",
     "dev": "npm run copy-apk && vite",

@@ -26,11 +26,11 @@ const s = {
 };
 
 const DialpadMock = () => (
-  <div className="css-phone" role="img" aria-label="CallKaro app dialpad with the number 98765 43210 typed in">
+  <div className="css-phone" role="img" aria-label="CallingKaro app dialpad with the number 98765 43210 typed in">
     <div className="css-phone-screen">
       <div style={s.head}>
         <div style={s.brand}>
-          CallKaro <span style={s.pill}>12 min left</span>
+          CallingKaro <span style={s.pill}>12 min left</span>
         </div>
       </div>
       <div style={s.tabs}>

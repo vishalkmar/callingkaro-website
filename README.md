@@ -1,6 +1,6 @@
-# CallKaro website
+# CallingKaro website
 
-Landing page for **CallKaro**, an internet calling app for India. It is built with React (JavaScript), Vite, framer-motion and three.js. One 3D phone travels through the page as you scroll, and the **Download APK** button serves the app straight from this site.
+Landing page for **CallingKaro**, an internet calling app for India. It is built with React (JavaScript), Vite, framer-motion and three.js. One 3D phone travels through the page as you scroll, and the **Download APK** button serves the app straight from this site.
 
 ## Run locally
 
@@ -13,9 +13,9 @@ npm run preview    # serve dist/ on http://localhost:4173
 
 ## Update the APK (no Play Store needed)
 
-The app is served from `public/downloads/CallKaro.apk`. To ship a new version:
+The app is served from `public/downloads/CallingKaro.apk`. To ship a new version:
 
-1. Replace `public/downloads/CallKaro.apk` with the new build. Keep the same file name.
+1. Replace `public/downloads/CallingKaro.apk` with the new build. Keep the same file name.
 2. Update `apkVersion` / `apkSize` in `src/content.js` if they changed.
 3. Commit and push. Vercel redeploys, and the download button serves the new file.
 
@@ -27,7 +27,7 @@ GitHub refuses files over 100 MB, so keep the APK under that. A single-ABI (arm6
    - build command: `npm run build`
    - output directory: `dist`
    - APK download headers
-2. Optional: under Project > Settings > Environment Variables, set `VITE_SITE_URL` to your real domain, for example `https://callkaro.in`. The default is in `.env`. This value is used in the SEO tags, the sitemap and `llms.txt`.
+2. Optional: under Project > Settings > Environment Variables, set `VITE_SITE_URL` to your real domain, for example `https://callingkaro-website.vercel.app`. The default is in `.env`. This value is used in the SEO tags, the sitemap and `llms.txt`.
 3. Deploy.
 
 The only environment variables are public ones (`VITE_SITE_URL`, `VITE_APK_URL`). No API keys or other secrets belong in this repository.

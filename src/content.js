@@ -2,13 +2,14 @@
 // Keep claims true to the app: credits are paid or earned, calls are not "unlimited free".
 
 export const SITE = {
-  name: 'CallKaro',
-  url: (import.meta.env.VITE_SITE_URL || 'https://callkaro.in').replace(/\/$/, ''),
-  apkUrl: import.meta.env.VITE_APK_URL || '/downloads/CallKaro.apk',
+  name: 'CallingKaro',
+  url: (import.meta.env.VITE_SITE_URL || 'https://callingkaro-website.vercel.app').replace(/\/$/, ''),
+  apkUrl: import.meta.env.VITE_APK_URL || '/downloads/CallingKaro.apk',
   apkVersion: '1.0.0',
   apkSize: '65 MB',
   minAndroid: 'Android 7.0+',
-  supportEmail: 'support@callkaro.in',
+  // Set VITE_SUPPORT_EMAIL once you own the address (e.g. on the new domain); empty = no Support link.
+  supportEmail: import.meta.env.VITE_SUPPORT_EMAIL || '',
   privacyUrl: 'https://callkaro-backend.onrender.com/legal/privacy',
   termsUrl: 'https://callkaro-backend.onrender.com/legal/terms',
 };
@@ -27,7 +28,7 @@ export const HERO = {
   title: ['Call any Indian number', 'over the internet.'],
   hindi: 'Internet se calling karo - kisi bhi mobile ya landline number pe.',
   text:
-    'CallKaro turns Wi-Fi or mobile data into a normal phone call. The person you call does not need the app - their phone simply rings. Pay per second with credits you buy or earn.',
+    'CallingKaro turns Wi-Fi or mobile data into a normal phone call. The person you call does not need the app - their phone simply rings. Pay per second with credits you buy or earn.',
   points: ['Jio, Airtel, Vi, BSNL & landlines', 'Per-second billing', 'Unanswered calls cost nothing'],
 };
 
@@ -107,20 +108,20 @@ export const INSTALL_STEPS = [
 
 export const FAQ = [
   {
-    q: 'What is CallKaro?',
-    a: 'CallKaro is an Android app that lets you call any Indian mobile or landline number over the internet (Wi-Fi or mobile data). The person you call receives a normal phone call and does not need the app.',
+    q: 'What is CallingKaro?',
+    a: 'CallingKaro is an Android app that lets you call any Indian mobile or landline number over the internet (Wi-Fi or mobile data). The person you call receives a normal phone call and does not need the app.',
   },
   {
-    q: 'Is CallKaro free?',
+    q: 'Is CallingKaro free?',
     a: 'Calls use credits. You can earn credits free by watching rewarded videos, the daily spin wheel and the welcome bonus, or buy minute packs. 1000 credits = 1 minute, billed per second. Calls that are not answered, busy or failed cost nothing.',
   },
   {
     q: 'Why is it an APK and not on the Play Store?',
-    a: 'CallKaro is distributed directly from this website for now. Download the APK, allow installs from your browser once, and install it like any app. A Play Store release is planned.',
+    a: 'CallingKaro is distributed directly from this website for now. Download the APK, allow installs from your browser once, and install it like any app. A Play Store release is planned.',
   },
   {
     q: 'Is the APK safe to install?',
-    a: 'Only download it from this official website. The app is signed by CallKaro, asks only for the permissions it needs (microphone to talk; contacts and notifications are optional) and never uploads your contacts.',
+    a: 'Only download it from this official website. The app is signed by CallingKaro, asks only for the permissions it needs (microphone to talk; contacts and notifications are optional) and never uploads your contacts.',
   },
   {
     q: 'Which numbers can I call?',
@@ -132,7 +133,7 @@ export const FAQ = [
   },
   {
     q: 'What number does the other person see?',
-    a: 'They see a CallKaro caller number, not your SIM number. If they call it back, they hear who we are and can opt out of calls.',
+    a: 'They see a CallingKaro caller number, not your SIM number. If they call it back, they hear who we are and can opt out of calls.',
   },
   {
     q: 'Do I need a SIM card?',
@@ -152,7 +153,7 @@ export const KEYWORDS = [
   'internet se call kaise kare',
   'free call karne wala app',
   'online calling app Hindi',
-  'CallKaro APK download',
+  'CallingKaro APK download',
   'calling app APK download',
   'per second billing calling app',
   'low cost calling app India',
@@ -169,7 +170,7 @@ export const STORY = [
     screen: 'incall',
     prop: 'waves',
     rot: '6,32,-4',
-    kicker: 'What CallKaro does',
+    kicker: 'What CallingKaro does',
     title: 'A real phone call, carried by your internet.',
     hindi: 'इंटरनेट से असली कॉल',
     lead: 'The person you call does not need the app or internet. Their phone rings like any other call.',
@@ -220,7 +221,7 @@ export const STORY = [
     kicker: 'How it works',
     title: 'Installed in under a minute.',
     hindi: 'डाउनलोड करो, कॉल करो',
-    lead: 'CallKaro is not on the Play Store yet - install it straight from this page.',
+    lead: 'CallingKaro is not on the Play Store yet - install it straight from this page.',
     items: [],
   },
 ];

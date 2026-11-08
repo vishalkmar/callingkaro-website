@@ -1,4 +1,4 @@
-// Draws the CallKaro app UI (our own screens: dialpad -> in-call) on a 2D canvas.
+// Draws the CallingKaro app UI (our own screens: dialpad -> in-call) on a 2D canvas.
 // The 3D phone uses it as its screen texture; a 12 s loop types a number, places the call and talks.
 
 export const SCREEN_W = 540;
@@ -79,7 +79,7 @@ const drawDialpad = (ctx, typed, pressedKey, callPressed) => {
   ctx.fillStyle = '#fff';
   ctx.font = '800 38px "Plus Jakarta Sans", sans-serif';
   ctx.textAlign = 'left';
-  ctx.fillText('CallKaro', 40, 128);
+  ctx.fillText('CallingKaro', 40, 128);
   // balance pill
   rr(ctx, SCREEN_W - 210, 96, 170, 48, 24);
   ctx.fillStyle = 'rgba(255,255,255,0.22)';

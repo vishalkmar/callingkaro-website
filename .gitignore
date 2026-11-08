@@ -1,0 +1,6 @@
+node_modules
+dist
+dist-ssr
+.env.local
+.DS_Store
+# public/downloads/CallKaro.apk IS committed on purpose: Vercel serves it to the Download APK button.

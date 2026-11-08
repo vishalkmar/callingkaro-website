@@ -1,0 +1,10 @@
+{
+  "name": "CallKaro - Internet calling app India",
+  "short_name": "CallKaro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8F4",
+  "theme_color": "#FF7A45",
+  "lang": "en-IN",
+  "icons": [{ "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }]
+}

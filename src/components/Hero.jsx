@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HERO, STATS, SITE } from '../content';
-import { DownloadButton, Icon, Tick, CountUp } from './ui';
+import { DownloadButton, Icon, Icon3D, Tick, CountUp } from './ui';
 import DialpadMock from './DialpadMock';
 
 // The headline and intro are visible in the pre-rendered HTML (fast first paint / SEO): they only slide.
@@ -109,10 +109,10 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="wrap stats" role="list" aria-label={`${SITE.name} in numbers`}>
+      <div className="wrap stats glass" role="list" aria-label={`${SITE.name} in numbers`}>
         {STATS.map((s, i) => (
           <motion.div
-            className="stat glass"
+            className="stat"
             role="listitem"
             key={s.label}
             initial={{ opacity: 0, y: 20 }}
@@ -120,10 +120,14 @@ const Hero = () => {
             viewport={{ once: true }}
             transition={{ delay: i * 0.08, duration: 0.6 }}
           >
-            <div className="stat-value">
-              <CountUp value={s.value} />
+            <Icon3D name={s.icon} tone={s.tone} size={46} />
+            <div className="stat-body">
+              <div className="stat-value">
+                <CountUp value={s.value} />
+              </div>
+              <div className="stat-title">{s.title}</div>
+              <div className="stat-label">{s.label}</div>
             </div>
-            <div className="stat-label">{s.label}</div>
           </motion.div>
         ))}
       </div>

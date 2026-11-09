@@ -33,10 +33,10 @@ export const HERO = {
 };
 
 export const STATS = [
-  { value: '1 sec', label: 'billing step - never rounded up to a minute' },
-  { value: '0', label: 'credits for busy, failed or unanswered calls' },
-  { value: '4', label: 'ways to get credits: packs, ads, daily spin, welcome bonus' },
-  { value: '2', label: 'languages in the app: English & Hindi' },
+  { value: '1 sec', title: 'Per-second billing', label: 'Never rounded up to a minute', icon: 'clock', tone: 'orange' },
+  { value: '0', title: 'Credits if unanswered', label: 'Busy or failed calls are free', icon: 'check', tone: 'green' },
+  { value: '4', title: 'Ways to get credits', label: 'Packs, videos, daily spin, bonus', icon: 'gift', tone: 'violet' },
+  { value: '2', title: 'App languages', label: 'English and Hindi', icon: 'globe', tone: 'blue' },
 ];
 
 export const FEATURES = [

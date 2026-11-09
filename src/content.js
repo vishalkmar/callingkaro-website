@@ -3,7 +3,7 @@
 
 export const SITE = {
   name: 'CallingKaro',
-  url: (import.meta.env.VITE_SITE_URL || 'https://callingkaro-website.vercel.app').replace(/\/$/, ''),
+  url: (import.meta.env.VITE_SITE_URL || 'https://callingkaro.in').replace(/\/$/, ''),
   apkUrl: import.meta.env.VITE_APK_URL || '/downloads/CallingKaro.apk',
   apkVersion: '1.0.0',
   apkSize: '65 MB',
@@ -142,6 +142,8 @@ export const FAQ = [
 ];
 
 export const KEYWORDS = [
+  'CallingKaro',
+  'Calling Karo app',
   'internet calling app India',
   'call any Indian number online',
   'Wi-Fi calling app India',

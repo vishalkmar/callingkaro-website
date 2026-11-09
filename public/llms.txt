@@ -3,7 +3,7 @@
 > CallingKaro is an Android app for India that places real phone calls over the internet (Wi-Fi, 4G or 5G) to any Indian mobile or landline number. The person called gets a normal call on their SIM and does not need the app. Calls use credits: 1000 credits = 1 minute, billed per second; unanswered, busy or failed calls are free.
 
 ## Key facts
-- Platform: Android 7.0 and newer. Distributed as an APK from https://callingkaro-website.vercel.app (not on Google Play yet).
+- Platform: Android 7.0 and newer. Distributed as an APK from https://callingkaro.in (not on Google Play yet).
 - Calls to: Indian mobile numbers (Jio, Airtel, Vi, BSNL and others) and Indian landlines.
 - Not for emergencies: 112, 100, 108 and short codes must be dialled from the phone dialer.
 - Credits: buy minute packs (paid credits never expire) or earn free credits from rewarded videos, a daily spin wheel and a welcome bonus. Credits have no cash value.
@@ -15,6 +15,6 @@
 CallingKaro ek internet calling app hai: Wi-Fi ya mobile data se kisi bhi Indian mobile ya landline number pe normal call karo. Saamne wale ko app ki zaroorat nahi. 1000 credits = 1 minute, per second billing, bina utha call free. Free credits: video dekh ke, daily spin aur welcome bonus.
 
 ## Links
-- Download APK: https://callingkaro-website.vercel.app/downloads/CallingKaro.apk
+- Download APK: https://callingkaro.in/downloads/CallingKaro.apk
 - Privacy Policy: https://callkaro-backend.onrender.com/legal/privacy
 - Terms of Use: https://callkaro-backend.onrender.com/legal/terms

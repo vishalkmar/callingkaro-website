@@ -24,11 +24,11 @@ export const NAV = [
 ];
 
 export const HERO = {
-  eyebrow: 'Internet calling app for India',
+  eyebrow: 'Free call online · Internet call app for India',
   title: ['Call any Indian number', 'over the internet.'],
   hindi: 'Internet se calling karo - kisi bhi mobile ya landline number pe.',
   text:
-    'CallingKaro turns Wi-Fi or mobile data into a normal phone call. The person you call does not need the app - their phone simply rings. Pay per second with credits you buy or earn.',
+    'CallingKaro is an internet call app: it turns Wi-Fi or mobile data into a normal phone call. The person you call does not need the app - their phone simply rings. Pay per second with credits you buy or earn.',
   points: ['Jio, Airtel, Vi, BSNL & landlines', 'Per-second billing', 'Unanswered calls cost nothing'],
 };
 
@@ -108,6 +108,14 @@ export const INSTALL_STEPS = [
 
 export const FAQ = [
   {
+    q: 'Can I make a free call online with CallingKaro?',
+    a: 'Yes. New users get welcome credits, and you can earn more free credits every day from the daily spin and short rewarded videos. Those credits pay for calls, so you can make a free call online to any Indian mobile or landline. Calls that are not answered cost nothing.',
+  },
+  {
+    q: 'What is an internet call?',
+    a: 'An internet call uses Wi-Fi or mobile data instead of your SIM minutes. With CallingKaro the internet call is connected to the normal phone network, so the person you call gets a regular call on their phone and does not need any app or internet.',
+  },
+  {
     q: 'What is CallingKaro?',
     a: 'CallingKaro is an Android app that lets you call any Indian mobile or landline number over the internet (Wi-Fi or mobile data). The person you call receives a normal phone call and does not need the app.',
   },
@@ -142,6 +150,9 @@ export const FAQ = [
 ];
 
 export const KEYWORDS = [
+  'free call',
+  'free call online',
+  'internet call',
   'CallingKaro',
   'Calling Karo app',
   'internet calling app India',
@@ -197,9 +208,9 @@ export const STORY = [
     prop: 'gift',
     rot: '8,26,8',
     kicker: 'Free credits',
-    title: 'Spin, watch, win - credits every day.',
+    title: 'Free call online with free credits, every day.',
     hindi: 'रोज़ फ्री क्रेडिट्स',
-    lead: 'Not ready to buy? Earn credits for free and keep calling. Paid credits never expire.',
+    lead: 'Make a free call online: earn credits for free with the welcome bonus, a daily spin and short videos, and spend them on calls. Paid credits never expire.',
     items: [FEATURES[3]],
   },
   {

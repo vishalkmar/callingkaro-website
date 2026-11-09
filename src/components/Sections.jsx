@@ -214,8 +214,10 @@ export const Footer = () => (
     <div className="wrap">
       <div className="footer-row">
         <a className="brand" href="#top">
-          <img className="brand-mark" src="/favicon.svg" alt="" width="34" height="34" />
-          CallingKaro
+          <img className="brand-mark" src="/favicon.svg" alt="" width="38" height="38" />
+          <span className="brand-word">
+            Calling<span className="brand-karo">Karo</span>
+          </span>
         </a>
         <nav className="footer-links" aria-label="Footer">
           {NAV.map(n => (

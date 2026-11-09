@@ -222,10 +222,21 @@ main,
   text-decoration: none;
 }
 .brand-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  box-shadow: 0 6px 14px -6px rgba(232, 98, 46, 0.7);
+  width: 38px;
+  height: 38px;
+  filter: drop-shadow(0 6px 10px rgba(238, 90, 23, 0.35));
+}
+.brand-word {
+  color: #15181f;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+.brand-karo {
+  background: linear-gradient(120deg, #ff8a3d, #ee5a17);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .nav {
   display: flex;

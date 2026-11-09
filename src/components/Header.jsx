@@ -15,8 +15,10 @@ const Header = () => {
     <header className={`header${scrolled ? ' scrolled' : ''}`}>
       <div className="wrap header-row">
         <a className="brand" href="#top" aria-label="CallingKaro home">
-          <img className="brand-mark" src="/favicon.svg" alt="" width="34" height="34" />
-          CallingKaro
+          <img className="brand-mark" src="/favicon.svg" alt="" width="38" height="38" />
+          <span className="brand-word">
+            Calling<span className="brand-karo">Karo</span>
+          </span>
         </a>
         <nav className="nav" aria-label="Main">
           {NAV.map(n => (

@@ -17,6 +17,9 @@ const canUseWebGL = () => {
   }
 };
 
+// Phones and small tablets get a static page: no 3D phone, no scroll animations (CSS turns them off too).
+export const isSmallScreen = () => typeof window !== 'undefined' && !!window.matchMedia?.('(max-width: 900px)').matches;
+
 const ScrollBar = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 24 });
@@ -25,15 +28,18 @@ const ScrollBar = () => {
 
 const App = () => {
   const [scene, setScene] = useState(false);
+  const [small, setSmall] = useState(false);
   useEffect(() => {
     const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-    const ok = !reduce && canUseWebGL();
+    const mobile = isSmallScreen();
+    setSmall(mobile);
+    const ok = !reduce && !mobile && canUseWebGL();
     document.documentElement.classList.add(ok ? 'with-3d' : 'no-3d');
     setScene(ok);
   }, []);
 
   return (
-    <MotionConfig reducedMotion="user">
+    <MotionConfig reducedMotion={small ? 'always' : 'user'}>
       <a className="sr-only" href="#features">
         Skip to content
       </a>
@@ -48,7 +54,7 @@ const App = () => {
           <StoryScene onReady={() => document.documentElement.classList.add('scene-ready')} />
         </Suspense>
       ) : null}
-      <ScrollBar />
+      {small ? null : <ScrollBar />}
       <Header />
       <main>
         <Hero />

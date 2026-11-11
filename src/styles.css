@@ -1199,3 +1199,63 @@ main,
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---------- phones & small tablets: a static page ----------
+   No scroll reveals, word masks, floating chips, count-ups or drifting blobs: everything is visible
+   at once, even before JavaScript runs (the !important beats framer-motion's inline styles). */
+@media (max-width: 900px) {
+  .rv,
+  .word-in,
+  .stat,
+  .float-chip,
+  .icon3d,
+  .stage,
+  .hero-grid > div > * {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+  .blob,
+  .eyebrow-dot,
+  .btn,
+  .btn * {
+    animation: none !important;
+  }
+  .cta-rings,
+  .scroll-bar,
+  .scene {
+    display: none !important;
+  }
+  /* no flying phone on phones: the dial-pad mock stays in the hero, the empty chapter boxes collapse */
+  .story-anchor {
+    display: none !important;
+  }
+  .story-grid {
+    min-height: 0;
+  }
+  .stage-fallback {
+    opacity: 1 !important;
+    transition: none !important;
+  }
+  .story {
+    padding: 44px 0;
+  }
+  /* blur on many cards is the main cause of jank on phones: use solid-ish surfaces instead */
+  .glass,
+  .icon-row {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  .glass:not(.glass-dark),
+  .icon-row {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .blob {
+    filter: blur(50px);
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

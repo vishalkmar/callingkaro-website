@@ -77,10 +77,10 @@ const reveal = {
 };
 
 /** Fades, un-blurs and lifts its child into view on scroll; `i` staggers siblings. */
-export const Reveal = ({ as = 'div', i = 0, children, ...rest }) => {
+export const Reveal = ({ as = 'div', i = 0, children, className = '', ...rest }) => {
   const M = motion[as];
   return (
-    <M variants={reveal} custom={i} initial="hidden" whileInView="show" viewport={{ once: true, margin: '-80px' }} {...rest}>
+    <M className={`rv ${className}`.trim()} variants={reveal} custom={i} initial="hidden" whileInView="show" viewport={{ once: true, margin: '-80px' }} {...rest}>
       {children}
     </M>
   );
@@ -126,7 +126,7 @@ export const CountUp = ({ value }) => {
   const end = match ? Number(match[1].replace(/,/g, '')) : null;
   const [shown, setShown] = useState(value);
   useEffect(() => {
-    if (!inView || end === null) {
+    if (!inView || end === null || window.matchMedia?.('(max-width: 900px)').matches) {
       return undefined;
     }
     const controls = animate(0, end, {

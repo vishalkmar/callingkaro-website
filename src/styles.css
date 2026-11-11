@@ -1259,3 +1259,45 @@ main,
     scroll-behavior: auto;
   }
 }
+
+/* phones: the hero visual is a soft orange showcase card - a smaller dial-pad phone with the
+   two info chips stacked under it (no overlap with the stats bar below). */
+@media (max-width: 900px) {
+  .stage {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+    padding: 26px 16px 18px;
+    border-radius: 32px;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 50% 28%, rgba(255, 122, 69, 0.3), rgba(255, 122, 69, 0) 62%),
+      linear-gradient(165deg, #fff6f0 0%, #ffe6d8 100%);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 24px 50px -32px rgba(56, 31, 18, 0.45);
+  }
+  .stage-fallback {
+    position: static !important;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .css-phone {
+    zoom: 0.76;
+    box-shadow: 0 30px 50px -26px rgba(27, 31, 39, 0.55), inset 0 0 0 2px #3a3e48;
+  }
+  .float-chip {
+    position: relative !important;
+    inset: auto !important;
+    width: 100%;
+    max-width: 330px;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(255, 255, 255, 0.92);
+  }
+  .stats {
+    margin-top: 16px;
+  }
+}

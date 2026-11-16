@@ -8,10 +8,11 @@ export const SITE = {
   apkVersion: '1.0.0',
   apkSize: '65 MB',
   minAndroid: 'Android 7.0+',
-  // Set VITE_SUPPORT_EMAIL once you own the address (e.g. on the new domain); empty = no Support link.
-  supportEmail: import.meta.env.VITE_SUPPORT_EMAIL || '',
-  privacyUrl: 'https://callkaro-backend.onrender.com/legal/privacy',
-  termsUrl: 'https://callkaro-backend.onrender.com/legal/terms',
+  // Policy pages are static HTML written at build time (scripts/legal-pages.mjs, text in src/legal.js).
+  privacyUrl: '/privacy',
+  termsUrl: '/terms',
+  refundUrl: '/refund-policy',
+  contactUrl: '/contact',
 };
 
 export const NAV = [

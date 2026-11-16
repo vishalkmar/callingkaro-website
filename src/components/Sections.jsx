@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { STORY, STEPS, CREDIT_WAYS, CREDIT_EXAMPLES, SAFETY, INSTALL_STEPS, FAQ, KEYWORDS, SITE, NAV } from '../content';
 import { CountUp, DownloadButton, Icon, Icon3D, Reveal, WordsReveal } from './ui';
+import { BUSINESS } from '../legal';
 
 const TONES = ['orange', 'green', 'violet', 'blue', 'pink', 'teal'];
 
@@ -225,18 +226,16 @@ export const Footer = () => (
               {n.label}
             </a>
           ))}
-          <a href={SITE.privacyUrl} rel="noopener">
-            Privacy Policy
-          </a>
-          <a href={SITE.termsUrl} rel="noopener">
-            Terms of Use
-          </a>
-          {SITE.supportEmail ? <a href={`mailto:${SITE.supportEmail}`}>Support</a> : null}
+          <a href={SITE.termsUrl}>Terms and Conditions</a>
+          <a href={SITE.privacyUrl}>Privacy Policy</a>
+          <a href={SITE.refundUrl}>Refund Policy</a>
+          <a href={SITE.contactUrl}>Contact Us</a>
         </nav>
       </div>
       <p className="footer-keywords">
         CallingKaro is an internet calling app for India: {KEYWORDS.join(' · ')}. Not for emergency calls - dial 112 from your
-        phone dialer. Credits have no cash value. © {new Date().getFullYear()} CallingKaro.
+        phone dialer. Credits have no cash value. © {new Date().getFullYear()} CallingKaro · {BUSINESS.owner} ({BUSINESS.type}) ·{' '}
+        {BUSINESS.address} · {BUSINESS.email} · {BUSINESS.phone}
       </p>
     </div>
   </footer>

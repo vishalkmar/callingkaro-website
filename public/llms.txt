@@ -18,5 +18,7 @@ CallingKaro ek internet calling app hai: Wi-Fi ya mobile data se kisi bhi Indian
 
 ## Links
 - Download APK: https://callingkaro.in/downloads/CallingKaro.apk
-- Privacy Policy: https://callkaro-backend.onrender.com/legal/privacy
-- Terms of Use: https://callkaro-backend.onrender.com/legal/terms
+- Terms and Conditions: https://callingkaro.in/terms
+- Privacy Policy: https://callingkaro.in/privacy
+- Refund and Cancellation Policy: https://callingkaro.in/refund-policy
+- Contact Us: https://callingkaro.in/contact

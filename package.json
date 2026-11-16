@@ -7,7 +7,7 @@
   "scripts": {
     "copy-apk": "node scripts/copy-apk.mjs",
     "dev": "npm run copy-apk && vite",
-    "build": "npm run copy-apk && vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "build": "npm run copy-apk && vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/legal-pages.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
